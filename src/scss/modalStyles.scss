@@ -1,0 +1,114 @@
+.myAddUserModal_topBlock {
+  background-color: rgb(143, 175, 222);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.myAddUserModal_bottomBlock {
+  background-color: rgb(197, 197, 197);
+  padding: 5px 20px;
+  div:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito;
+}
+
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito;
+  z-index: 10000;
+}
+
+.modal_dialog {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 50%;
+  max-width: 450px;
+  margin: 40px auto;
+}
+
+.modal__content {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 32px;
+  display: flex;
+  border-radius: 10px;
+}
+.myAddUserModal_btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button:first-child {
+    margin-right: 5px;
+  }
+}
+
+.myAddUserModal_btn {
+  background-color: rgb(143, 175, 222);
+  padding: 5px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  &:disabled {
+    background-color: gray;
+    padding: 5px;
+    color: #000;
+    border: none;
+    cursor: default;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal_dialog {
+    width: 80%;
+  }
+  .myAddUserModal_topBlock {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal_dialog {
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+  .myAddUserModal_topBlock {
+    font-size: 18px;
+  }
+}
+@media (max-width: 370px) {
+  .myAddUserModal_bottomBlock {
+    padding: 5px 10px;
+  }
+  .myAddUserModal_topBlock {
+    font-size: 16px;
+  }
+}
