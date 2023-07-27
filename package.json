@@ -2,20 +2,20 @@
   "name": "incom_test",
   "version": "0.0.0",
   "private": true,
-  "homepage": "http://olyabogdanova.github.io/incomTest",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
     "pinia": "^2.1.4",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "execa": "latest"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.2",
